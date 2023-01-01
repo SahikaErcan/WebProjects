@@ -1,0 +1,88 @@
+.main-nav {
+
+    &__button {
+        width: 70px;
+        height: 70px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        span {
+            color: $dark-color;
+            font-size: small;
+        }
+    }
+    &__items {
+
+        li {
+            padding: 1rem .6rem;
+
+            a {
+                text-decoration: none;
+                color: $dark-color;
+                border-bottom: 3px transparent solid;
+                padding-bottom: .5rem;
+                transition: border-color .5s;
+
+                &:hover {
+                    color: $dark-color;
+                    border-color: $danger-color;
+                }
+                &.active {
+                    border-color: $danger-color;
+                }
+            }
+        }
+    }
+}
+
+#header {
+    &__home {
+        background-color: $primary-color;
+        height: 100vh;
+        color: #fff;
+
+        .header-content {
+            padding-top: 5rem 10% 0rem 10%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+
+            div  {
+                margin-left: 15%;
+                text-align: left;
+            }
+
+            .content-bg {
+                text-align: center;
+                background-color: $dark-color;
+                width: 100rem;
+                height: 60rem;
+                border-radius: 45rem;
+                transform: rotate(-45deg);
+                right: -18rem;
+                top: -14rem;
+                position: absolute;
+                
+                img {
+                    transform: rotate(45deg);
+                    width: auto;
+                    margin: 20rem 0rem 0rem -45rem;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        .typewrite {
+            display: block;
+        }
+    }
+}
